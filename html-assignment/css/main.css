@@ -1,12 +1,22 @@
+/* image size change*/
 img {
     max-width: 100%;
 }
 
-p {
+/* body tag font changed*/
+body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-size: 18px;
 }
 
+/* header and footer background color change */
+header,
+footer {
+    text-align: center;
+    background-color: cornsilk;
+}
+
+/* navegation styling */
 nav>ul {
     list-style: none;
     margin: 0;
@@ -29,24 +39,37 @@ nav a:hover {
 }
 
 h1,
-h2,
-footer {
+h2 {
     text-align: center;
     font-family: Arial;
 }
 
-p {
-    font-size: 18px;
-}
-
+/*qute styling*/
 blockquote {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
 
+/*table styling*/
 table {
     text-align: center;
-    font-size: medium;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*id selector*/
+a[href="#my-image"] {
+    box-shadow: 0 0 4px 1px rgb(2, 2, 2);
+    ;
+    text-decoration: none;
+}
+
+/*hobbies styling*/
+.hobbies {
+    text-decoration: square;
+    background-color: lemonchiffon;
+}
+tr td:nth-child(2n+1) {
+    background-color: white;
+  }
