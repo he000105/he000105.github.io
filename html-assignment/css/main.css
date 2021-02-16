@@ -67,9 +67,14 @@ a[href="#my-image"] {
 
 /*hobbies styling*/
 .hobbies {
-    text-decoration: square;
     background-color: lemonchiffon;
 }
+
 tr td:nth-child(2n+1) {
     background-color: white;
-  }
+}
+
+/*add square bullet to skills section*/
+.skills {
+    list-style-type: square;
+}
