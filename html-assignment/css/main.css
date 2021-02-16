@@ -61,8 +61,9 @@ table {
 /*id selector*/
 a[href="#my-image"] {
     box-shadow: 0 0 4px 1px rgb(2, 2, 2);
-    ;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsalmon;
 }
 
 /*hobbies styling*/
@@ -75,6 +76,6 @@ tr td:nth-child(2n+1) {
 }
 
 /*add square bullet to skills section*/
-.skills {
+ul.skills {
     list-style-type: square;
 }
