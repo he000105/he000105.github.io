@@ -1,43 +1,80 @@
+/*****set a background color for the page and set the font design******/
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
 }
-
-header {
+/****style a header*****/
+header{
     background-position: center;
     background-image: url("../images/lone-starfish-wide.jpg");
     background-size: 100%;
-    padding-top: 4em;
+    padding-top: 5em;
     background-repeat: no-repeat;
     text-align: center;
 }
+
+/*****style headers******/
 H1{
     color: #ffffff;
     font-weight: lighter;
 }
+
+h2,
+h3{
+    font-weight: lighter;
+}
+/*******navegation styling********/
 nav {
-    position:initial;
+    position: initial;
     top: 0;
     left: 0;
+    width: 100%;
     margin:auto;
     background-color: #d5e9e7;
   }
-nav ul {
-    list-style: none;
-    text-decoration: none;
+nav ul li{
+    display: inline-block;
 }
-
 nav ul a {
     display: block;
     text-decoration: none;
 }
-
-p {
-    font-size: small;
+/******adding container for article******/
+.container{
+    margin: 0 auto;
+}
+/****image float on left****/
+img{
+    float: left;
+    width: 150px;
+    padding-right: 10px;
 }
 
+/******set up body******/
 body{
     width: 80%;
     background-color:#d5e9e7;
     margin: auto;
+}
+main{
+    padding: 5px;
+    font-size: smaller;
+}
+
+/******footer styling****/
+footer{
+    font-size: smaller;
+    padding: 1rem;                                                                                                                                                                        rem;
+    text-align: right;
+}
+/******contact style********/
+.box{
+    width: 95%;
+    height:fit-content;
+    border:1px solid #191919;
+    padding:5px;
+    margin:10px;
+}
+button{
+    position: relative;
 }
