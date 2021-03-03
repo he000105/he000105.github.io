@@ -23,21 +23,35 @@ h2,
 h3{
     font-weight: lighter;
 }
+
 /*******navegation styling********/
 nav {
-    position: initial;
     top: 0;
     left: 0;
     width: 100%;
     margin:auto;
     background-color: #d5e9e7;
   }
+  nav ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+  }
 nav ul li{
     display: inline-block;
+    padding: 15px 12%;
+    border-right: 1px solid #000000;
+}
+nav ul li:last-child{
+    border-right: none;
 }
 nav ul a {
     display: block;
     text-decoration: none;
+    color: black;
+    
+ 
 }
 /******adding container for article******/
 .container{
@@ -46,7 +60,7 @@ nav ul a {
 /****image float on left****/
 img{
     float: left;
-    width: 150px;
+    width: 20%;
     padding-right: 10px;
 }
 
@@ -61,20 +75,38 @@ main{
     font-size: smaller;
 }
 
-/******footer styling****/
-footer{
-    font-size: smaller;
-    padding: 1rem;                                                                                                                                                                        rem;
-    text-align: right;
-}
 /******contact style********/
 .box{
     width: 95%;
-    height:fit-content;
-    border:1px solid #191919;
-    padding:5px;
+    height: max-content;
+    border:1px solid #000000;
+    padding:10px;
     margin:10px;
 }
+/***input boxes styling**/
+.box2{
+    width: 98%;
+}
+textarea{
+    height: 50px;
+}
+
+/***choice question font setting**/
+.mtext{
+    font-size: medium;
+}
+/****button stuling****/
 button{
-    position: relative;
+    padding: 5px;
+    background: none;
+    border: 1px solid #000000;
+    margin-top: 1em;
+}
+
+
+/******footer styling****/
+footer{
+    font-size: smaller;
+    padding: 1rem;                                                                                                                                                                     
+    text-align: right;
 }
