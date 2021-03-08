@@ -3,8 +3,9 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
 }
+
 /****style a header*****/
-header{
+header {
     background-position: center;
     background-image: url("../images/lone-starfish-wide.jpg");
 
@@ -14,80 +15,90 @@ header{
 }
 
 /*****style headers******/
-H1{
+H1 {
     color: #ffffff;
     font-weight: lighter;
 }
 
 h2,
-h3{
+h3 {
     font-weight: lighter;
 }
 
 /*******navegation styling********/
 nav {
     background-color: #d5e9e7;
-  }
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
-  }
-nav ul li{
+}
+
+nav ul li {
     display: inline-block;
     padding: 15px 12%;
     border-right: 1px solid #000000;
 }
-nav ul li:last-child{
+
+nav ul li:last-child {
     border-right: none;
 }
+
 nav ul a {
     display: block;
     text-decoration: none;
     color: black;
 }
+
 /******adding container for article******/
-.container{
+.container {
     margin: 0 auto;
 }
+
 /****image float on left****/
-img{
+img {
     float: left;
     width: 20%;
     padding-right: 10px;
 }
 
 /******set up body******/
-body{
+body {
     width: 80%;
-    background-color:#d5e9e7;
+    background-color: #d5e9e7;
     margin: auto;
 }
-main{
+
+main {
     padding: 5px;
     font-size: smaller;
 }
 
 /******contact style********/
-.box{
+.box {
     width: 95%;
     height: max-content;
-    border:1px solid #000000;
-    padding:10px;
-    margin:10px;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
 }
+
 /***input boxes styling**/
-.box2{
+.box2 {
     width: 98%;
 }
-textarea{
+
+textarea {
     height: 50px;
 }
 
 /***choice question font setting**/
-.mtext{
+.mtext {
     font-size: medium;
 }
+
 /****button stuling****/
-button{
+button {
     padding: 5px;
     background: none;
     border: 1px solid #000000;
@@ -96,8 +107,8 @@ button{
 
 
 /******footer styling****/
-footer{
+footer {
     font-size: smaller;
-    padding: 1rem;                                                                                                                                                                     
+    padding: 1rem;
     text-align: right;
 }
