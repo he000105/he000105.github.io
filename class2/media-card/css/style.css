@@ -74,7 +74,10 @@ table {
 }
 
 /*TABLET*/
-@media screen and(mid-width:400px){
+@media screen and(min-width:400px){
+    .card{
+        max-width: 500px;
+    }
     .card img{
         display: block;
         width:100px;
@@ -82,4 +85,15 @@ table {
         margin-right: 0.5rem;
     }
 
+}
+/*DESKTOP*/
+@media screen and (min-width:600px){
+    .card img{
+        width:100%;
+        margin-bottom: 1rem;
+        display:block;
+    }
+    .card{
+        max-width: 300px;
+    }
 }
