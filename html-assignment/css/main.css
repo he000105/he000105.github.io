@@ -1,12 +1,15 @@
 /* image size change*/
 img {
     max-width: 100%;
+    margin:auto;
 }
 
 /* body tag font changed*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    width: 80%;
+    margin:auto;
 }
 
 /* header and footer background color change */
@@ -20,14 +23,14 @@ footer {
 nav>ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1.5rem;
 }
 
 nav a {
     color: inherit;
     display: block;
     text-align: center;
-    font-size: medium;
+    font-size:20px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
@@ -78,4 +81,10 @@ tr td:nth-child(2n+1) {
 /*add square bullet to skills section*/
 ul.skills {
     list-style-type: square;
+}
+
+/*******styling link********/
+.facebook a{
+    text-decoration: none;
+    color: black;
 }

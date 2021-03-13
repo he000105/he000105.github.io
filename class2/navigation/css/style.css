@@ -163,10 +163,9 @@ nav ul li:hover {
 }
 
 /*DESKTOP VIEW*/
-@media screen and (mid-width: 500px) {
+@media screen and (min-width: 500px) {
     nav ul li {
         display: inline-block;
         border-top: none;
     }
-    
 }
