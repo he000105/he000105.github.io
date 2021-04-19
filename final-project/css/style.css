@@ -185,6 +185,12 @@ img {
 }
 
 /**************Navegation styling****************/
+.mobile-logo{
+    width:max-content;
+}
+.logo{
+    background-color: #c78b07;
+}
 nav {
     font-size: 1rem;
     font-family: sans-serif;
@@ -198,30 +204,44 @@ nav ul li a {
     display: block;
     text-align: center;
 }
-
-nav ul li:hover {
+nav a:hover{
     background-color: #c78b07;
+    color: #000;
 }
-
+.search-box{
+    
+        width: 90%;
+        height: 35px;
+        margin-bottom: .5rem;
+        border: solid .5px #000;
+        margin-top: 5px;
+}
 /******HEADER STYLING***********/
-
+.head-bg{
+    background-image: url(../img/main-banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding:3rem;
+}
 .header-bg {
     color: #fff;
     background-color: rgba(0, 0, 0, .5);
-    background-size: cover;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
+    padding-top: 30px;
+    margin-left: 10px;
 }
 .contact{
     color: #000;
     background-color: #c78b07;
-    padding: 1.5rem;
+    padding: 1rem;
     text-decoration: none;
+    margin-left: 10px;
 }
-.contact a i{
+.contact i{
     color: #000;
 }
 /*********Button styling******/
@@ -320,7 +340,6 @@ footer {
 
 footer p {
     padding-top: .5em;
-
 }
 
 footer p a {
