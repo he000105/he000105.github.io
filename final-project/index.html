@@ -28,14 +28,17 @@
                 <li><a href="#">Team</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <input type="text" placeholder="Search.." class="search-box">
-            <i class="fas fa-search"></i>
+            <div>
+                <input type="text" placeholder="Search.." class="search-box">
+                <i class="fas fa-search"></i>
+            </div>
         </nav>
         <!--Header of the page-->
         <section class="head-bg">
             <div class="header-bg">
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, rerum laudantium numquam repellendus
+                <p class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, rerum laudantium
+                    numquam repellendus
                     maxime nemo quae veniam ratione sapiente. Similique, excepturi assumenda. Recusandae, voluptas
                     Corrupti officiis ipsam qui assumenda?</p>
                 <a class="contact" href="">Contact Us<i class="fas fa-caret-right"></i></a>
@@ -49,17 +52,23 @@
         <section class="about-us">
             <div class="container">
                 <img src="./img/about-us.jpg" alt="About Us">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit veniam cumque voluptas
-                    totam, tempore necessitatibus corporis doloremque minima ipsa sed nemo saepe sunt a ea illo
-                    aspernatur nesciunt omnis?</p>
+                <div class="text-about">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit veniam cumque voluptas
+                        totam, tempore necessitatibus corporis doloremque minima ipsa sed nemo saepe sunt a ea illo
+                        aspernatur nesciunt omnis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit veniam cumque voluptas
+                        totam, tempore necessitatibus corporis doloremque minima ipsa sed nemo saepe sunt a ea illo
+                        aspernatur nesciunt omnis?</p>
+                </div>
             </div>
         </section>
         <!--Our Services section-->
-        <section>
+        <section class="services-grid">
+
             <div class="container">
-                <h2>Our Services</h2>
-                <div class="our-services">
+                <h2 class="box1">Our Services</h2>
+                <div class="our-services box2">
                     <img src="./img/digital.jpg" alt="digital">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat delectus accusantium id
@@ -69,7 +78,7 @@
                         praesentium saepe.</p>
                     <a class="btn" href="">Digital Plans<i class="fas fa-caret-right"></i></a>
                 </div>
-                <div class="our-services">
+                <div class="our-services box3">
                     <img src="./img/marketing.jpg" alt="maekerting">
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, possimus! Voluptas quasi blanditiis
@@ -78,7 +87,7 @@
                         modi quasi dolores quis!</p>
                     <a class="btn" href="">Marketing Plans<i class="fas fa-caret-right"></i></a>
                 </div>
-                <div class="our-services">
+                <div class="our-services box4">
                     <img src="./img/video.jpg" alt="video">
                     <h3>Video Production</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas fuga a error voluptatem delectus
@@ -86,7 +95,7 @@
                         voluptas dolorum quidem dolore.</p>
                     <a class="btn" href="">Video Plans<i class="fas fa-caret-right"></i></a>
                 </div>
-                <div class="our-services">
+                <div class="our-services box5">
                     <img src="./img/web.jpg" alt="web">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, asperiores maxime laborum
@@ -95,7 +104,7 @@
                         tempora. Autem!</p>
                     <a class="btn" href="">Web Plans<i class="fas fa-caret-right"></i></a>
                 </div>
-                <div class="our-services">
+                <div class="our-services box6">
                     <img src="./img/print.jpg" alt="print">
                     <h3>Print</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illo impedit saepe enim quas
@@ -117,11 +126,13 @@
                 <a class="btn" href="">Learn more<i class="fas fa-caret-right"></i></a>
             </div>
         </section>
-        <section>
+        <section class="team-grid">
             <div class="container">
                 <h2>Our Team</h2>
-                <img src="./img/john.jpg" alt="John">
-                <div class="our-team">
+                <div class="t1">
+                    <img src="./img/john.jpg" alt="John">
+                </div>
+                <div class="our-team t2">
                     <h3>John Doe</h3>
                     <p><abbr title="Chief Executive Officer">CEO</abbr>and <abbr>Co-owner</abbr></p><br>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aut obcaecati illum libero
@@ -129,8 +140,9 @@
                         aspernatur neque officia qui. Aliquid ab necessitatibus ducimus ut, voluptatibus aut dolorum
                         voluptates perferendis. At, suscipit.</p>
                 </div>
-                <img src="./img/bob.jpg" alt="bob">
-                <div class="our-team">
+                <div class="t3">
+                    <img src="./img/bob.jpg" alt="bob"></div>
+                <div class="our-team t4">
                     <h3>Bob Rite</h3>
                     <p><abbr title="Chief Finacial Office">CFO</abbr> and <abbr>Co-owner</abbr></p><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur accusamus perferendis
@@ -140,11 +152,11 @@
             </div>
         </section>
         <!--Contact Us Section-->
-        <section>
+        <section class="clh">
+            <h2>Contact Us</h2>
             <div class="container">
-                <h2>Contact Us</h2>
                 <!--form fill up area-->
-                <div class="contact-us">
+                <div class="contact">
                     <h3>Send us a message</h3>
                     <form action="info.html" method="get">
                         <div>
@@ -163,7 +175,7 @@
                     </form>
                 </div>
                 <!--Hours table-->
-                <div>
+                <div class="hours">
                     <h3>Hours of Operation</h3>
                     <table>
                         <thead>
@@ -184,15 +196,14 @@
                         </tbody>
                     </table>
                 </div>
+                <!--map area-->
+                <div class="locations">
+                    <h3>Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360082.55603142834!2d-76.24701400261415!3d45.163914184731695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1618879221988!5m2!1sen!2sca"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <!--map area-->
-            <div class="container">
-                <h3>Location</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179324.96458016985!2d-75.77289401391657!3d45.39012754615006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617674680697!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
         </section>
     </main>
 

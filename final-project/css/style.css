@@ -136,9 +136,13 @@ table {
 /* ---------------------------CSS RESET -----------------------------*/
 
 /*------------------custom CSS-------------------------*/
+
+/******set up max width with bleeding background and google font*******/
 html {
     font-family: 'Open Sans', sans-serif;
     max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
 }
 
 header {
@@ -174,12 +178,12 @@ p {
     font-family: sans-serif;
     font-weight: lighter;
     font-size: small;
-    margin: 1rem;
     margin-bottom: 1rem;
 }
 
 img {
     width: 100%;
+    height: auto;
 }
 
 .container {
@@ -198,12 +202,13 @@ img {
 nav {
     font-size: 1rem;
     padding: 10px;
+    width: 100%;
 }
 
 nav ul li a {
     color: #c78c06;
     text-decoration: none;
-    padding: 1em;
+    padding: 1rem;
     display: block;
     text-align: center;
 }
@@ -244,10 +249,7 @@ h1 {
 
 .contact {
     color: #222;
-    background-color: #c78c06;
-    padding: 1rem;
     text-decoration: none;
-    margin-left: 10px;
 }
 
 .contact i {
@@ -347,7 +349,15 @@ th,
 td {
     padding: 1rem;
 }
-
+/*******map******/
+iframe{
+    width: 100%;
+    height: 600px;
+}
+.locations{
+    margin: auto;
+    margin: 10px;
+}
 /********FOOTER STYLING*******/
 footer {
     padding-left: 10%;
@@ -368,29 +378,189 @@ footer p a {
 
 /**WEB Styling**/
 @media screen and (min-width: 700px) {
-    /****navagation****/
-    .main-nav{
-        padding-left: ;
+    h2 {
+        margin-top: 0%;
+        font-size: 25px;
     }
-    .main-nav, .nav-list{
-        display: flex;
 
+    p {
+        margin-bottom: 0%;
     }
-    .nav-list li{
-    
-        flex: 1; 
+
+    img {
+        width: 300px;
+        height: 100%;
     }
-    .search-box{
-        width:150px;
+
+    .container {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 30px;
     }
-    i{
+
+    /****navagation****/
+    li {
+        width: 120px;
+    }
+
+    /***flexbox for nav*****/
+    .main-nav,
+    .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }
+
+    nav {
+        padding: 1em;
+    }
+
+    .search-box {
+        width: 150px;
+    }
+
+    i {
         margin-top: 4px;
     }
-    .logo{
-        background-color: rgba(0,0,0,0);
+
+    .logo {
+        background-color: rgba(0, 0, 0, 0);
     }
-    .mobile-logo{
+
+    .mobile-logo {
         width: 50px;
+    }
+
+    /******About Us****/
+    .about-us .container {
+        display: flex;
+    }
+
+    .text-about {
         margin: 10px;
+    }
+
+    /***our serviece*****/
+    .our-services img {
+        width: 250px;
+        height: fit-content;
+    }
+
+    .our-services p {
+        margin-bottom: 10px;
+    }
+
+    /*****gridbox for our service section*****/
+    .services-grid .container {
+        display: grid;
+        grid-template-columns: repeat (6, 1fr);
+        column-gap: 10px;
+        width: 700px;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-row: 2;
+    }
+
+    .box3 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .box4 {
+        grid-column-start: 1;
+        grid-row: 3;
+    }
+
+    .box5 {
+        grid-column-start: 2;
+        grid-row: 3;
+    }
+
+    .box6 {
+        grid-column-start: 4;
+        grid-row: 3;
+    }
+
+    /*******our vision******/
+    .our-vision {
+        background-size: cover;
+    }
+
+    .our-vision .container {
+        width: 700px;
+    }
+
+    .pur-vison p {
+        margin-bottom: 10px;
+    }
+
+    .our-vision .btn {
+        padding: 1rem;
+    }
+
+    /*****Our team******/
+    /*****Our team gridbox***/
+    .team-grid{
+        width:700px;
+        margin:auto;
+    }
+    .team-grid img{
+        width: 100%;
+        height: 100%;
+    }
+    .team-grid .container{
+        display: grid;
+        grid-template-columns: repeat 2;
+    }
+    .t1{
+        grid-column-start:1;
+    }
+    .t2{
+        grid-column:2 ;
+    }
+    .t3{
+        grid-column-start:2;
+    }
+    .t4{
+        grid-row:3;
+    }
+/****contact Us****/
+.clh{
+    width: 700px;
+    margin: auto;
+}
+textarea{
+    height: 100px;
+    margin-bottom: 15px;
+}
+iframe{
+    height:300px;
+}
+    /******contact locations hours flexbox*******/
+    .clh .container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+    .contact{
+        grid-template-columns: 1;
+    }
+    .locations{
+        grid-column: 2;
+        grid-row:1;
+    }
+    .hours{
+        grid-column: span 2;
+        grid-row: 2;
     }
 }
