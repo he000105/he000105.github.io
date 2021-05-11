@@ -1,0 +1,585 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------------------------CSS RESET -----------------------------*/
+
+/*------------------custom CSS-------------------------*/
+
+/******set up max width with bleeding background and google font*******/
+html {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    background-color: #222;
+}
+
+i {
+    color: #c78c06;
+    padding: .5rem;
+    font-size: 1rem;
+    border: solid 2px #c78c06;
+    height: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h2 {
+
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: larger;
+
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 10px;
+}
+
+/**************Navegation styling****************/
+.mobile-logo {
+    width: max-content;
+}
+
+.logo {
+    background-color: #c78c06;
+}
+
+nav {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul li a {
+    color: #c78c06;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #c78c06;
+    color: #000;
+}
+
+.search-box {
+    width: 90%;
+    height: 35px;
+    margin-bottom: .5rem;
+    border: solid .5px #000;
+    margin-top: 5px;
+}
+
+/******HEADER STYLING***********/
+.head-bg {
+    background-size: 100%;
+    background-image: url(../img/main-banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+
+.header-bg {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+.contact {
+    color: #222;
+    text-decoration: none;
+    background-color: #c78c06;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.contact i {
+    color: #222;
+}
+
+/*********Button styling******/
+.btn {
+    text-decoration: none;
+    padding: 1.5rem;
+    background-color: #222;
+    color: #fff;
+}
+
+a i {
+    color: #fff;
+    border: none;
+    margin: 1rem;
+}
+
+/*********About Us Styling**********/
+.about-us {
+    background-color: #ffe6ac;
+}
+
+/*******Our Services***********/
+.our-services {
+    background-color: #ffe6ac;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/****Our Vision*******/
+.our-vision {
+    background-image: url(../img/vision.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.our-vision .btn {
+    border: solid 2px #c78c06;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/********Our Team***********/
+.our-team {
+    background-color: #ffe6ac;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*******Contact Us******/
+.contact-us {
+    width: 95%;
+    height: max-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box {
+    width: 100%;
+    height: 20px;
+    margin-bottom: .5rem;
+    border: solid .5px #222;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #222;
+    border-radius: 0;
+    color: #c78c06;
+    font-size: medium;
+}
+
+/******table styling********/
+table,
+td,
+th {
+    border: solid .5px #222;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+th,
+td {
+    padding: 1rem;
+}
+
+/*******map******/
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.locations {
+    margin: auto;
+    margin: 10px;
+}
+
+/********FOOTER STYLING*******/
+footer {
+    padding-left: 10%;
+    padding-bottom: 1em;
+    background-color: #222;
+    color: #c78c06;
+    font-size: small;
+    padding-top: 1rem;
+}
+
+footer p {
+    padding-top: .5em;
+}
+
+footer p a {
+    color: #c78c06;
+}
+
+/**WEB Styling**/
+@media screen and (min-width: 700px) {
+    h2 {
+        margin-top: 0%;
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 0%;
+    }
+
+    img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .container {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /****navagation****/
+    li {
+        width: 120px;
+    }
+
+    /***flexbox for nav*****/
+    .main-nav,
+    .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }
+
+    nav {
+        padding: 1em;
+    }
+
+    .search-box {
+        width: 150px;
+    }
+
+    i {
+        margin-top: 4px;
+    }
+
+    .logo {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .mobile-logo {
+        width: 50px;
+    }
+
+    /******About Us****/
+    .about-us .container {
+        display: flex;
+    }
+
+    .text-about {
+        margin: 10px;
+    }
+
+    /***our serviece*****/
+    .our-services img {
+        width: 250px;
+        height: fit-content;
+    }
+
+    .our-services p {
+        margin-bottom: 10px;
+    }
+
+    /*****gridbox for our service section*****/
+    .services-grid .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 10px;
+        width: 700px;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-row: 2;
+    }
+
+    .box3 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .box4 {
+        grid-column-start: 1;
+        grid-row: 3;
+    }
+
+    .box5 {
+        grid-column-start: 2;
+        grid-row: 3;
+    }
+
+    .box6 {
+        grid-column-start: 4;
+        grid-row: 3;
+    }
+
+    /*******our vision******/
+    .our-vision {
+        background-size: cover;
+    }
+
+    .our-vision .container {
+        width: 700px;
+    }
+
+    .pur-vison p {
+        margin-bottom: 10px;
+    }
+
+    .our-vision .btn {
+        padding: 1rem;
+    }
+
+    /*****Our team******/
+    /*****Our team gridbox***/
+    .team-grid {
+        width: 700px;
+        margin: auto;
+    }
+
+    .team-grid img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-grid .container {
+        display: grid;
+        grid-template-columns: repeat (2,1fr);
+    }
+
+    .t1 {
+        grid-column-start: 1;
+    }
+
+    .t2 {
+        grid-column: 2;
+    }
+
+    .t3 {
+        grid-column-start: 2;
+    }
+
+    .t4 {
+        grid-row: 3;
+    }
+
+    /****contact Us****/
+    .clh {
+        width: 700px;
+        margin: auto;
+    }
+
+    textarea {
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    /******contact locations hours flexbox*******/
+    .clh .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+
+    .contact-us {
+        grid-column: 1;
+    }
+
+    .locations {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .hours {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+}
