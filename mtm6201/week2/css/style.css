@@ -1,3 +1,103 @@
-nav{
+/*adding higher specific to change navegation setting*/
+nav#nav {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(250, 244, 209);
+    border: 0;
+    width: 100%;
+    padding: 0;
+}
+
+/*changing navegation list using specific class*/
+.nav a.nav-link {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+/*adding nav hover effect*/
+nav a:hover {
+    padding-top: 10px;
+    background: burlywood;
+}
+
+/*main setting*/
+main#main {
+    background-color: white;
+}
+
+section#home {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/*smaller the fontsize in header to draw attention to tittle*/
+section.home#home {
+    color: white;
+}
+
+h1.page-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 8rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*ajusting content font size throught the page*/
+main p {
+    font-weight: lighter;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.about#about {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+/*adjusting about me title*/
+h2.section-title {
+    font-size: 3rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*changing img size to fit the content*/
+img.about-image{
+    width:20%;
+}
+
+.contact-form-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+section form.contact-form {
+    width: 90%;
+    background-color: wheat;
+    padding: 30px;
+}
+
+div .contact-form-input {
+    width: 90%;
+}
+textarea{
+    height:100px;
+}
+button{
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 10px;
+}
+/*adding web styling*/
+@media screen and (min-width: 700px) {
+    /*changing nav to flex*/
+    nav#nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    div .contact-form-input {
+        width: 98%;
+    }
 }
