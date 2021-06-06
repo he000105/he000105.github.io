@@ -4,21 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="./images/logo/logo.png" alt="logo">
+        <img class="logo" src="./images/logo/logo.png" alt="logo">
         <h1>Want to be your own boss?</h1>
         <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
         <img src="./images/bg-image/scooter.svg" alt="background">
     </header>
     <main>
-        <table>
-            <thead>Apply Now</thead>
+        <form class="apply-form">
+            <h2>Apply Now</h2>
             <p>Enter your info below</p>
-            <input>
-        </table>
+            <div>
+                <input type="text" name="first-name" value="First name">
+                <input type="text" name="last-name" value="Last name">
+                <input type="tel" name="phone-number" value="Phone number">
+                <input type="email" name="email" value="Email Address">
+                <input type="checkbox" name="agree" class="checkbox">
+                <label class="non-bold" id="non-bold">I agree to dash terms</label>
+                <button type="submit" class="submit">DRIVE WITH US</button>
+                <p>Already applied?
+                    <a href="*">Check your application status here</a>
+                </p>
+            </div>
+        </form>
     </main>
+    <div class="bottombg">
+        <footer>
+            <h3>See how much you can earn with Dash</h3>
+            <p>how many hours do you want to drive with us this week?</p>
+            <input type="text" value="Hours" class="hours">
+            <input type="text" value="City" class="city">
+            <button type="submit">CALCULATE</button>
+            <section>
+                <img src="./images/icons/facebook.svg">
+                <img src="./images/icons/instagram.svg">
+                <img src="./images/icons/twitter.svg">
+                <img src="./images/icons/linkedin.svg">
+            </section>
+        </footer>
+    </div>
 </body>
+
+</html>
