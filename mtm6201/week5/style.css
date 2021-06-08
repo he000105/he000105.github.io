@@ -32,7 +32,7 @@ h4 {
 img {
   display: block;
   /*make all images to fit*/
-  max-width: 100%;
+/*  max-width: 100%;
   height: auto;
   /*NOTE FOR LATER----This need to be on for safari*/
 }

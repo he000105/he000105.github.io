@@ -399,7 +399,7 @@ footer p a {
     }
 
     .container {
-        width: 700px;
+    
         margin: auto;
         margin-bottom: 30px;
     }
@@ -438,6 +438,7 @@ footer p a {
 
     .mobile-logo {
         width: 50px;
+        height:auto;
     }
 
     /******About Us****/
@@ -464,7 +465,7 @@ footer p a {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: 10px;
-        width: 700px;
+        width: 90%;
     }
 
     .box1 {
