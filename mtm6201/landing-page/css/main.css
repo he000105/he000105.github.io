@@ -147,7 +147,7 @@ html {
 
 /*****Using body tag to change the margin for the whole page****/
 body {
-    width: 305px;
+    width: 80%;
     margin: auto;
 }
 
@@ -157,18 +157,18 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: bold;
 }
 
 header p {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: normal;
     padding-bottom: 10px;
 }
 
 form {
-    width: 300px;
+    width: 80%;
     height: 530px;
     background-color: white;
     border-radius: 25px;
