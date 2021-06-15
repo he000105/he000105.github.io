@@ -370,24 +370,25 @@ footer div {
 
     /*using grid to relocate logos*/
     .logos {
-        width: max-content;
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 20px;
     }
-    .fb{
-        grid-column: 3;
-
-    }
     .ig {
         grid-column: 1;
+      
     }
 
     .tw {
         grid-column: 2;
+      
     }
-
+    .fb{
+        grid-column: 3;
+        grid-row: 1;
+    }
     .in{
         grid-column: 4;
+       
     }
 }
