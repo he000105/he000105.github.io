@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./css/main.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="container" id="container">
         <header>
-            <img class="logo" src="./images/logo/logo.png" alt="logo">
-            <h1>Want to be your own boss?</h1>
-            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-            <img src="./images/bg-image/scooter.svg" alt="background">
+            <!--wrap up banner for desktop-->
+            <div class="banner">
+                <img class="logo" src="./images/logo/logo.png" alt="logo">
+                <h1>Want to be your own boss?</h1>
+                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            </div>
         </header>
         <main>
-            <form class="apply-form">
+            <img src="./images/bg-image/scooter.svg" alt="background" class="scooter">
+            <form>
                 <h2>Apply Now</h2>
                 <p>Enter your info below</p>
                 <div>
@@ -28,9 +32,9 @@
                     <input type="tel" name="phone-number" value="Phone number">
                     <input type="email" name="email" value="Email Address">
                     <input type="checkbox" name="agree" class="checkbox">
-                    <label class="non-bold" id="non-bold">I agree to dash terms</label>
+                    <label class="non-bold">I agree to dash terms</label>
                     <button type="submit" class="submit">DRIVE WITH US</button>
-                    <p class="already" id="already">Already applied?
+                    <p class="already">Already applied?
                         <a href="*">Check your application status here</a>
                     </p>
                 </div>
@@ -38,19 +42,23 @@
         </main>
     </div>
     <footer>
-        <div>
-        <h3>See how much you can earn with Dash</h3>
-        <p>how many hours do you want to drive with us this week?</p>
-        <input type="text" value="Hours" class="hours">
-        <input type="text" value="City" class="city">
-        <button type="submit" id="cal">CALCULATE</button>
-        <div class="logos">
-            <img src="./images/icons/facebook.svg" alt="fb" class="fb">
-            <img src="./images/icons/instagram.svg" alt="ig" class="ig">
-            <img src="./images/icons/twitter.svg" alt="tw" class="tw">
-            <img src="./images/icons/linkedin.svg" alt="in" class="in">
-        </div>
-    </div>
+        <section class="container1">
+            <!--wrap up form to fit flex/grid on desktop version-->
+            <div class="apply-form">
+                <h3>See how much you can earn with Dash</h3>
+                <p>how many hours do you want to drive with us this week?</p>
+                <input type="text" value="Hours" class="hours">
+                <input type="text" value="City" class="city">
+                <button type="submit" class="cal" id="cal">CALCULATE</button>
+            </div>
+            <!--wrap up logos-->
+            <div class="logos">
+                <img src="./images/icons/facebook.svg" alt="fb" class="fb">
+                <img src="./images/icons/instagram.svg" alt="ig" class="ig">
+                <img src="./images/icons/twitter.svg" alt="tw" class="tw">
+                <img src="./images/icons/linkedin.svg" alt="in" class="in">
+            </div>
+        </section>
     </footer>
 
 </body>
