@@ -136,7 +136,6 @@ table {
 /* ---------------------------CSS RESET -----------------------------*/
 
 /*--------Customize CSS-----*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 
 /*******Using html tag to change the font family, background and fonts color for the whole page****/
 html {
@@ -145,9 +144,9 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*****Using body tag to change the margin for the whole page****/
-body {
-    width: 80%;
+/*****Using id tag to change the margin for the main part****/
+div#container {
+    width: 310px;
     margin: auto;
 }
 
@@ -157,19 +156,20 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 header p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: normal;
     padding-bottom: 10px;
 }
 
 form {
-    width: 80%;
-    height: 530px;
+    margin:auto;
+    width: 300px;
+    height: fit-content;
     background-color: white;
     border-radius: 25px;
     padding: 25px;
@@ -180,13 +180,13 @@ form {
 }
 
 form h2 {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 form p {
-    font-size: 16px;
+    font-size: 1.5em;
     margin-bottom: 15px;
 }
 
@@ -198,7 +198,7 @@ input {
     margin-bottom: 15px;
     border: 0px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: lighter;
     color: #9B9B9B;
 }
@@ -236,11 +236,34 @@ div p a {
 
 footer {
     margin-top: 50px;
-    padding-top: 20px;
+   padding-top: 2em;;
     background-color: #FFFD8C;
-   
 }
 footer h3{
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight:bold;
 }
+
+/*using container to wrap up footer content*/
+footer div{
+    width:310px;
+    margin: auto;
+}
+/*using id tag to specific the calculate button style*/
+button#cal{
+    background-color:#FF8480;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+}
+
+.logos{
+    padding:15px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+@media screen and (min-width: 700px){}
+
+@media screen and (min-width: 1024px){}
