@@ -1,0 +1,21 @@
+ul a{
+    text-decoration: none;
+    display:block;
+    color:black;
+}
+
+/*adding fade in animation for nav hover effect using background-size*/
+.btn {
+
+    padding:1rem;
+    text-align: center;
+    background-image: url(../img/hover.png);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:0px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover{
+      background-size:80px;}
