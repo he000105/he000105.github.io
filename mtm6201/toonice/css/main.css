@@ -49,6 +49,12 @@ ul a:hover {
     top: 0;
 }
 /*Home page styling*/
+h1{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Lemon', cursive;
+    color:#383838;
+}
 
 @media screen and (min-width: 768px) {}
 
