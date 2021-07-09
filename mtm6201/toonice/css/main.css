@@ -1,23 +1,55 @@
-ul a{
+/*adding margin to content*/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+.topnav a {
     text-decoration: none;
-    display:block;
-    color:#DA627D;
-    padding:1em;
+    display: block;
+    color: #DA627D;
+    padding: 0.9em;
     font-size: 1em;
     text-align: center;
 }
-ul a:hover{
-    color:black;
-}
+
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
     background-image: url(../img/hover.png);
-    background-position:top;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size:0px;
+    background-size: 0px;
     transition: 0.3s;
-  }
-  
-  .btn:hover{
-    background-size:80px;}
+}
 
+ul a:hover {
+    background-size: 80px;
+    color: black;
+}
+
+/*styling burger menu*/
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #burger {
+    display: none;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0;
+}
+/*Home page styling*/
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
