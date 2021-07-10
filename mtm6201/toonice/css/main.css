@@ -10,11 +10,12 @@
 a{
     color: black;
 }
+/*changing font color to make nav more clear fitting drop down menu*/
 .topnav a {
     font-family: 'Mukta', sans-serif;
     text-decoration: none;
     display: block;
-    color: #DA627D;
+    color: black;
     padding: 0.9em;
     font-size: 1em;
     text-align: center;
@@ -34,7 +35,7 @@ p{
 
 ul a:hover {
     background-size: 80px;
-    color: black;
+    color: #DA627D;
 }
 
 /*styling burger menu*/
@@ -60,6 +61,7 @@ h1{
     text-align: center;
     font-family: 'Lemon', cursive;
     color:#383838;
+    padding:30px;
 }
 
 .dropshadow{
@@ -91,7 +93,7 @@ header{
     height: 600px;
 }
 .banner-bg{
-    background-image: url(../img/mobile-bg.png);
+    background-image: url(../img/home-small.png);
     background-size: 100%;
     background-position: bottom;
 }
@@ -109,13 +111,25 @@ blockquote{
     float: left;
     margin-right: 10px;
 }
-
+/*menu styling*/
+.down{
+    width:15px;
+}
 /*responsive google map size in css instead of html*/
 iframe{
     width: 95%;
     height: auto;
     padding: 10px;
 }
-@media screen and (min-width: 768px) {}
+/*products styling*/
+@media screen and (min-width: 768px) {
+    /*change nav font color to match design*/
+    .topnav a{
+        color:#DA627D;
+    }
+    ul a:hover{
+        color:black;
+    }
+}
 
 @media screen and (min-width: 1024px) {}
