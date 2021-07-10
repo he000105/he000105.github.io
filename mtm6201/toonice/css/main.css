@@ -5,10 +5,13 @@
 }
 
 .logo {
-    width: 50px;
+    width: 45px;
 }
-
+a{
+    color: black;
+}
 .topnav a {
+    font-family: 'Mukta', sans-serif;
     text-decoration: none;
     display: block;
     color: #DA627D;
@@ -16,7 +19,10 @@
     font-size: 1em;
     text-align: center;
 }
-
+p{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 1em;
+}
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
     background-image: url(../img/hover.png);
@@ -48,7 +54,7 @@ ul a:hover {
     right: 0;
     top: 0;
 }
-/*Home page styling*/
+
 h1{
     font-size: 4em;
     text-align: center;
@@ -56,6 +62,60 @@ h1{
     color:#383838;
 }
 
+.dropshadow{
+    font-family: 'Pacifico', cursive;
+    text-shadow:2px 2px #F9D6DD;
+}
+h2{
+    color:#DA627D;
+    text-align: center;
+}
+footer{
+    background-color: #F9D6DD;
+    padding:10px
+}
+
+.icons{
+    width:25px;
+    height: 25px;
+}
+.socialicons{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+/*Home page styling*/
+header{
+    height: 600px;
+}
+.banner-bg{
+    background-image: url(../img/mobile-bg.png);
+    background-size: 100%;
+    background-position: bottom;
+}
+blockquote{
+    font-size:1.2rem;
+    padding:50px;
+}
+.bigger-font{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+.store-front{
+    width:200px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*responsive google map size in css instead of html*/
+iframe{
+    width: 95%;
+    height: auto;
+    padding: 10px;
+}
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}
