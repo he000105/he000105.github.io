@@ -89,6 +89,8 @@ footer {
     background-color: #F9D6DD;
     padding: 10px;
     margin-top: 20px;
+
+    position: relative;
 }
 
 .icons {
@@ -254,16 +256,18 @@ textarea.box{
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    margin:15px;
+    margin-top:15px;
+    margin-left: 66%;
     background-color: #B5D7D6;
     color: white;
-    float:right;
+
 }
 /*using flexbox to align table content*/
 .contact{
     display: flex;
     flex-wrap: wrap;
 }
+
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}
