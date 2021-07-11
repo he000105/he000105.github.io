@@ -16,7 +16,6 @@ li {
     list-style-type: none;
 }
 
-/*changing font color to make nav more clear fitting drop down menu*/
 .topnav a {
     font-family: 'Mukta', sans-serif;
     display: block;
@@ -81,17 +80,22 @@ h2 {
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 7vw;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer {
     background-color: #F9D6DD;
-    padding: 10px
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .icons {
     width: 25px;
     height: 25px;
 }
+
 /*flex for social media icons*/
 .socialicons {
     width: 50%;
@@ -106,7 +110,7 @@ Home page styling
 ----------------------------------*/
 /*specify set home page banner height to limit changes of dropdown menu*/
 header.banner-bg {
-    height: 550px;
+    height: 500px;
 }
 
 .banner-bg {
@@ -124,7 +128,7 @@ blockquote {
 
 .bigger-font {
     font-weight: bold;
-    font-size:3vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -146,10 +150,6 @@ iframe {
 /*-----------------------------
 menu styling
 ---------------------*/
-.down {
-    width: 15px;
-}
-
 .quote {
     font-family: 'Pacifico', cursive;
     font-size: 1.5em;
@@ -157,19 +157,16 @@ menu styling
     color: #F58EB5;
 }
 
-.small-pic {
+/*mobile menu and info site banner pictures and contact pic*/
+.small-pic,
+.our-store,
+.slogan {
     width: 100%;
-
 }
 
 /*hide big banner in mobile*/
 .big-pic {
     display: none;
-}
-
-.menu h2,#products h2{
-    padding: 50px;
-    width: 100%;
 }
 
 .card {
@@ -193,7 +190,7 @@ menu styling
 
 .part {
     background-color: #B5D7D6;
-    padding:20px;
+    padding: 20px;
 }
 
 .flower {
@@ -202,23 +199,26 @@ menu styling
     margin: auto;
 }
 
-.part .quote{
-    color:#6F7070;
+.part .quote {
+    color: #6F7070;
 }
+
 /*------------------
 products styling
 ---------------------*/
-.card2{
-    width:40%;
+.card2 {
+    width: 40%;
 }
-.card2 img{
+
+.card2 img {
     width: 200px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
+
 /*using flex for product list*/
-.products{
-    display:flex;
+.products {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -227,6 +227,43 @@ products styling
 Our Store Styling
 ------------------------*/
 
+.box {
+    height: 25px;
+    width: 85%;
+    border-radius: 25px;
+    border: none;
+    background-color: #F9D6DD;
+    margin-top: 10px;
+}
+
+label {
+    font-family: 'Mukta', sans-serif;
+    margin:auto;
+}
+label.message{
+    margin-top: 20px;
+}
+textarea.box{
+    height: 200px;
+}
+.submit{
+    border-radius: 50px;
+    border:none;
+    padding:10px;
+    width:33%;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin:15px;
+    background-color: #B5D7D6;
+    color: white;
+    float:right;
+}
+/*using flexbox to align table content*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}

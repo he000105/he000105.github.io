@@ -56,7 +56,7 @@
             <h1 class="toon">TOON ICE</h1>
             <p class="quote">We create real ice cream with FUN</p>
         </div>
-        <img src="img/our-store.png" alt="store-bannner" class="our-store>">
+        <img src="img/our-store.png" alt="store-bannner" class="our-store">
     </section>
 
     <section class="container">
@@ -78,10 +78,29 @@
                     <p>K1Y 1X9</p>
                 </div>
     </section>
-    <section class="container dropshadow" id="contact">
-        <h2>Contact Us</h2>
+    
+    <section class="container" id="contact">
+        <h2 class="dropshadow">Contact Us</h2>
         <img src="img/store-slogan.png" alt="slogan" class="slogan">
-        
+        <form action="contact.html" method="get">
+              <div class="contact">
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" required class="box">
+              </div>
+              <div class="contact">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" class="box">
+              </div>
+              <div class="contact">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required class="box">
+              </div>
+              <div class="contact">
+                <label for="message" class="message">Message</label>
+                <textarea name="message" id="message" required class="box"></textarea>
+              </div>
+              <button type="submit" class="submit" id="submit">Submit</button>
+        </form>
     </section>
 
 
