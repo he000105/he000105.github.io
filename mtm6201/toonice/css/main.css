@@ -130,7 +130,7 @@ blockquote {
 
 .bigger-font {
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ products styling
 }
 
 .card2 img {
-    width: 200px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -228,46 +228,143 @@ products styling
 /*---------------------------
 Our Store Styling
 ------------------------*/
+.address p {
+    text-align: center;
+}
 
+/****************************
+Contact
+*****************************/
 .box {
     height: 25px;
-    width: 85%;
     border-radius: 25px;
     border: none;
     background-color: #F9D6DD;
-    margin-top: 10px;
+    width: 82%;
+    float: right;
 }
 
 label {
     font-family: 'Mukta', sans-serif;
-    margin:auto;
 }
-label.message{
-    margin-top: 20px;
-}
-textarea.box{
+
+textarea.box {
     height: 200px;
 }
-.submit{
+
+.submit {
     border-radius: 50px;
-    border:none;
-    padding:10px;
-    width:33%;
+    border: none;
+    padding: 10px;
+    width: 33%;
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top:15px;
+    margin-top: 15px;
     margin-left: 66%;
     background-color: #B5D7D6;
     color: white;
 
 }
-/*using flexbox to align table content*/
-.contact{
-    display: flex;
-    flex-wrap: wrap;
+
+.contact {
+    margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    .quote {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    iframe {
+        width: 50%;
+        height: 300px;
+        padding: 10px;
+        float: left;
+    }
+
+    .part {
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    /******************
+    Home Pgae
+    ****************/
+    .banner-bg {
+        background-image: url(../img/home-big.png);
+        background-color: #F9D6DD;
+    }
+
+    header.banner-bg {
+        max-height: max-content;
+    }
+
+    /*****************
+    Menu
+    *****************/
+    .small-pic{
+        display: none;
+    }
+    /*show the big banner for bigger device*/
+    .big-pic{
+        display: block;
+        width: 100%;
+    }
+    /*change menu card width to add one more column for tablet*/
+    .card{
+        width: 30%;
+    }
+
+    .flower{
+        width:40%;
+        float:left;
+    }
+
+    /********************
+    Info page
+    ********************/
+    .info-head {
+        width: 48%;
+    }
+
+    .our-store {
+        width: 48%;
+        height: auto;
+    }
+
+    .info-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .address {
+        margin-top: 100px;
+    }
+
+    .slogan {
+        width: 45%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    /*flex wrap contact area*/
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 
 @media screen and (min-width: 1024px) {}
