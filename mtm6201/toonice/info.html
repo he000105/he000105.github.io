@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=yes" />
-    <title>TOON ICE</title>
+    <title>TOON ICE - Our Store</title>
     <!--reset link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -24,23 +24,21 @@
 
 <body>
     <header>
-        <div class="container topnav">
+        <nav class="container topnav">
             <!--Logo link to home page-->
             <a href="index.html"><img src="img/logo-no-name.png" alt="logo" class="logo"></a>
-            <nav id="burger">
-                <ul><a href="index.html" class="btn">Home</a></ul>
-                <ul><a href="menu.html" class="btn">Menu</a></ul>
-                <ul><a href="menu.html#products" class="btn">Products</a></ul>
-                <ul><a href="info.html" class="btn">Our Store</a></ul>
-                <ul><a href="info.html#contact" class="btn">Contact Us</a></ul>
-            </nav>
+            <ul id="burger">
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="menu.html" class="btn">Menu</a></li>
+                <!--using id to direct to specify area of another page-->
+                <li><a href="menu.html#products" class="btn">Products</a></li>
+                <li><a href="info.html" class="btn">Our Store</a></li>
+                <li><a href="info.html#contact" class="btn">Contact Us</a></li>
+            </ul>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
-        <div>
-            <h1 class="toon">TOON ICE</h1>
-        </div>
+        </nav>
     </header>
     <!--javascript for burger menu - on click to activate dropdown menu-->
     <script>
@@ -53,4 +51,55 @@
             }
         }
     </script>
+    <section class="container">
+        <div>
+            <h1 class="toon">TOON ICE</h1>
+            <p class="quote">We create real ice cream with FUN</p>
+        </div>
+        <img src="img/our-store.png" alt="store-bannner" class="our-store>">
+    </section>
+
+    <section class="container">
+        <h2 class="dropshadow">Our Store</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="part">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7469.259599845963!2d-75.7188258251213!3d45.39992708159557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce043a7f314b01%3A0xd1e63865efa54d5c!2s238%20Fairmont%20Ave%2C%20Ottawa%2C%20ON%20K1Y%201X9!5e0!3m2!1sen!2sca!4v1625434469745!5m2!1sen!2sca"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="address">
+                    <p class="quote">238 Fairmont</p>
+                    <p>238 Fairmont Ave, Ottawa, Ontario</p>   
+                    <p>K1Y 1X9</p>
+                </div>
+    </section>
+    <section class="container dropshadow" id="contact">
+        <h2>Contact Us</h2>
+        <img src="img/store-slogan.png" alt="slogan" class="slogan">
+        
+
+        
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>238 Fairmont Ave, Ottawa, ON K1Y 1X9</p>
+            <p>Pictures from <a href="https://unsplash.com/">Unsplash</a></p>
+            <p>&copy;Copyright Toon Ice</p>
+        </div>
+        <div class="socialicons container">
+            <a href="tel:437-340-4032"><img src="img/call.png" alt="phone" class="icons"></a>
+            <a href="mailto:toonice@gmail.com"><img src="img/email.png" alt="email" class="icons"></a>
+            <a href="http://facebook.com/angel.ho.haha"><img src="img/facebook-logo.png" alt="facebook"
+                    class="icons"></a>
+            <a href="http://www.instagram.com/angelhohoha/"><img src="img/instagram-logo.png" alt="instagram"
+                    class="icons"></a>
+        </div>
+    </footer>
 </body>

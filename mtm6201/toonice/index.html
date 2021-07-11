@@ -24,20 +24,21 @@
 
 <body>
     <header class="banner-bg">
-        <div class="container topnav">
+        <nav class="container topnav">
             <!--Logo link to home page-->
             <a href="index.html"><img src="img/logo-no-name.png" alt="logo" class="logo"></a>
-            <nav id="burger">
-                <ul><a href="index.html" class="btn">Home</a></ul>
-                <ul><a href="menu.html" class="btn">Menu</a></ul>
-                <ul><a href="menu.html#products" class="btn">Products</a></ul>
-                <ul><a href="info.html" class="btn">Our Store</a></ul>
-                <ul><a href="info.html#contact" class="btn">Contact Us</a></ul>
-            </nav>
+            <ul id="burger">
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="menu.html" class="btn">Menu</a></li>
+                 <!--using id to direct to specify area of another page-->
+                <li><a href="menu.html#products" class="btn">Products</a></li>
+                <li><a href="info.html" class="btn">Our Store</a></li>
+                <li><a href="info.html#contact" class="btn">Contact Us</a></li>
+            </ul>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
+        </nav>
         <div>
             <h1 class="toon">TOON ICE</h1>
         </div>
@@ -58,13 +59,13 @@
         </section>
     </main>
     <footer>
-        <section class="container">
-            <div>
+
+            <div class="container">
                 <p>238 Fairmont Ave, Ottawa, ON K1Y 1X9</p>
                 <p>Pictures from <a href="https://unsplash.com/">Unsplash</a></p>
                 <p>&copy;Copyright Toon Ice</p>
             </div>
-            <div class="socialicons">
+            <div class="socialicons container">
                 <a href="tel:437-340-4032"><img src="img/call.png" alt="phone" class="icons"></a>
                 <a href="mailto:toonice@gmail.com"><img src="img/email.png" alt="email" class="icons"></a>
                 <a href="http://facebook.com/angel.ho.haha"><img src="img/facebook-logo.png" alt="facebook"
@@ -72,7 +73,7 @@
                 <a href="http://www.instagram.com/angelhohoha/"><img src="img/instagram-logo.png" alt="instagram"
                         class="icons"></a>
             </div>
-        </section>
+  
     </footer>
     <!--javascript for burger menu - on click to activate dropdown menu-->
     <script>

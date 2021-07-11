@@ -7,23 +7,31 @@
 .logo {
     width: 45px;
 }
-a{
+
+a {
     color: black;
 }
+
+li {
+    list-style-type: none;
+}
+
 /*changing font color to make nav more clear fitting drop down menu*/
 .topnav a {
     font-family: 'Mukta', sans-serif;
-    text-decoration: none;
     display: block;
     color: black;
     padding: 0.9em;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
 }
-p{
+
+p {
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 1em;
 }
+
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
     background-image: url(../img/hover.png);
@@ -33,7 +41,7 @@ p{
     transition: 0.3s;
 }
 
-ul a:hover {
+li a:hover {
     background-size: 80px;
     color: #DA627D;
 }
@@ -56,80 +64,169 @@ ul a:hover {
     top: 0;
 }
 
-h1{
-    font-size: 4em;
+h1 {
+    font-size: 12vw;
     text-align: center;
     font-family: 'Lemon', cursive;
-    color:#383838;
-    padding:30px;
+    color: #383838;
+    padding: 30px;
 }
 
-.dropshadow{
-    font-family: 'Pacifico', cursive;
-    text-shadow:2px 2px #F9D6DD;
+.dropshadow {
+    text-shadow: 2px 2px #F9D6DD;
 }
-h2{
-    color:#DA627D;
+
+h2 {
+    color: #DA627D;
     text-align: center;
-}
-footer{
-    background-color: #F9D6DD;
-    padding:10px
+    font-family: 'Pacifico', cursive;
+    font-size: 7vw;
 }
 
-.icons{
-    width:25px;
+footer {
+    background-color: #F9D6DD;
+    padding: 10px
+}
+
+.icons {
+    width: 25px;
     height: 25px;
 }
-.socialicons{
+/*flex for social media icons*/
+.socialicons {
     width: 50%;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-/*Home page styling*/
-header{
-    height: 600px;
+
+/*--------------------------------
+Home page styling
+----------------------------------*/
+/*specify set home page banner height to limit changes of dropdown menu*/
+header.banner-bg {
+    height: 550px;
 }
-.banner-bg{
+
+.banner-bg {
     background-image: url(../img/home-small.png);
     background-size: 100%;
     background-position: bottom;
 }
-blockquote{
-    font-size:1.2rem;
-    padding:50px;
+
+blockquote {
+    font-size: 5vw;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
 }
-.bigger-font{
+
+.bigger-font {
     font-weight: bold;
-    font-size: 1em;
+    font-size:3vw;
     text-align: center;
 }
-.store-front{
-    width:200px;
+
+/*use float to make text wrap aroud picture*/
+.store-front {
+    width: 200px;
     float: left;
     margin-right: 10px;
 }
-/*menu styling*/
-.down{
-    width:15px;
-}
+
 /*responsive google map size in css instead of html*/
-iframe{
+iframe {
     width: 95%;
     height: auto;
     padding: 10px;
 }
-/*products styling*/
-@media screen and (min-width: 768px) {
-    /*change nav font color to match design*/
-    .topnav a{
-        color:#DA627D;
-    }
-    ul a:hover{
-        color:black;
-    }
+
+
+/*-----------------------------
+menu styling
+---------------------*/
+.down {
+    width: 15px;
 }
+
+.quote {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #F58EB5;
+}
+
+.small-pic {
+    width: 100%;
+
+}
+
+/*hide big banner in mobile*/
+.big-pic {
+    display: none;
+}
+
+.menu h2,#products h2{
+    padding: 50px;
+    width: 100%;
+}
+
+.card {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.scoop {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/*using flexbox to style menu list*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.part {
+    background-color: #B5D7D6;
+    padding:20px;
+}
+
+.flower {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.part .quote{
+    color:#6F7070;
+}
+/*------------------
+products styling
+---------------------*/
+.card2{
+    width:40%;
+}
+.card2 img{
+    width: 200px;
+    display:block;
+    margin:auto;
+}
+/*using flex for product list*/
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*---------------------------
+Our Store Styling
+------------------------*/
+
+@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}
