@@ -130,7 +130,7 @@ blockquote {
 
 .bigger-font {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -222,7 +222,7 @@ products styling
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /*---------------------------
@@ -311,24 +311,65 @@ textarea.box {
     /*****************
     Menu
     *****************/
-    .small-pic{
+    .small-pic {
         display: none;
     }
+
     /*show the big banner for bigger device*/
-    .big-pic{
+    .big-pic {
         display: block;
         width: 100%;
     }
+
     /*change menu card width to add one more column for tablet*/
-    .card{
+    .card {
         width: 30%;
     }
 
-    .flower{
-        width:40%;
-        float:left;
+    .flower {
+        height: 300px;
+        width: auto;
+        float: left;
     }
 
+    #menu {
+        padding: 0;
+        height: 300px;
+    }
+
+    #menu .quote {
+        padding-top: 100px;
+    }
+    .card2{
+        width:150px;
+        margin:auto;
+    }
+
+    /*change product flexbox to grid*/
+    .products{
+        background-image: url(../img/produts-bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: grid;
+        grid-template-areas: 'a a b b c c'
+                             'd d d e e e';
+    }
+    .item1{
+        grid-area:a;
+    }
+    .item2{ 
+        grid-area:b;
+    }
+    .item3{
+        grid-area:c;
+    }
+    .item4{
+        grid-area:d;
+    }
+    .item5{
+        grid-area:e;
+    }
     /********************
     Info page
     ********************/
