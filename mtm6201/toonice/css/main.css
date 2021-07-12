@@ -31,6 +31,52 @@ p {
     font-size: 1em;
 }
 
+h1 {
+    font-size: 12vw;
+    text-align: center;
+    font-family: 'Lemon', cursive;
+    color: #383838;
+    padding: 30px;
+}
+
+.dropshadow {
+    text-shadow: 2px 2px #F9D6DD;
+}
+
+h2 {
+    color: #DA627D;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 7vw;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: #F9D6DD;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p{
+    font-size: 15px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+.icons {
+    width: 25px;
+    height: 25px;
+}
+
+/*flex for social media icons*/
+.socialicons {
+    width: 50%;
+    padding-top:30px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
     background-image: url(../img/hover.png);
@@ -63,62 +109,14 @@ li a:hover {
     top: 0;
 }
 
-h1 {
-    font-size: 12vw;
-    text-align: center;
-    font-family: 'Lemon', cursive;
-    color: #383838;
-    padding: 30px;
-}
-
-.dropshadow {
-    text-shadow: 2px 2px #F9D6DD;
-}
-
-h2 {
-    color: #DA627D;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-size: 7vw;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-footer {
-    background-color: #F9D6DD;
-    padding: 10px;
-    margin-top: 20px;
-
-    position: relative;
-}
-
-.icons {
-    width: 25px;
-    height: 25px;
-}
-
-/*flex for social media icons*/
-.socialicons {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 /*--------------------------------
 Home page styling
 ----------------------------------*/
 /*specify set home page banner height to limit changes of dropdown menu*/
-header.banner-bg {
-    height: 500px;
-}
-
 .banner-bg {
-    background-image: url(../img/home-small.png);
-    background-size: 100%;
-    background-position: bottom;
+    height: 550px;
+    background: url(../img/home-small.png) no-repeat bottom;
+    background-size:100%;
 }
 
 blockquote {
@@ -284,30 +282,45 @@ textarea.box {
         font-size: 5vw;
     }
 
-    iframe {
-        width: 50%;
-        height: 300px;
-        padding: 10px;
-        float: left;
-    }
-
     .part {
         height: 350px;
         margin-top: 50px;
     }
-
+    footer p{
+        text-align: left;
+    }
+    .socialicons{
+        width:150px;
+        margin-right: 5%;
+        margin-top: -80px;
+        margin-bottom: 30px;
+    }
+    
     /******************
     Home Pgae
     ****************/
     .banner-bg {
-        background-image: url(../img/home-big.png);
+        background: url(../img/home-big.png) no-repeat bottom;
+        background-size: cover;
         background-color: #F9D6DD;
     }
 
     header.banner-bg {
         max-height: max-content;
     }
-
+    .store-front{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+        margin-right: 3vw;
+    }
+    .home-map{
+        width: 45vw;
+        height: 30vw;
+    }
+    .contents{
+        height: 70vw;
+    }
     /*****************
     Menu
     *****************/
@@ -387,6 +400,12 @@ textarea.box {
         width: 100%;
         margin-top: 30px;
     }
+.part iframe {
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+    float: left;
+}
 
     .address {
         margin-top: 100px;
@@ -408,4 +427,37 @@ textarea.box {
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 85%;
+    }
+    .socialicons{
+        width: 25%;
+    }
+    /**********************
+    Home Page
+    ********************/
+    .banner-bg{
+        height:800px;
+    }
+    .contents{
+        height: 60vw;
+    }
+    .contents .bigger-font{
+        font-size: 3vw;
+    }
+    /*******************
+    menu
+    ******************/
+
+    /*change menu list card size to add one more column to list*/
+    .card{
+        width: 20%;
+        margin:15px;
+    }
+
+    /*responsive product list card size*/
+    .card2{
+        width: 15vw;
+    }
+}
