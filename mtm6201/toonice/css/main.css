@@ -16,16 +16,6 @@ li {
     list-style-type: none;
 }
 
-.topnav a {
-    font-family: 'Mukta', sans-serif;
-    display: block;
-    color: black;
-    padding: 0.9em;
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-}
-
 p {
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 1em;
@@ -58,7 +48,8 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-footer p{
+
+footer p {
     font-size: 15px;
     margin-bottom: -10px;
     text-align: center;
@@ -71,11 +62,22 @@ footer p{
 /*flex for social media icons*/
 .socialicons {
     width: 50%;
-    padding-top:30px;
+    padding-top: 30px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/*nav bar styling*/
+.topnav a {
+    font-family: 'Mukta', sans-serif;
+    display: block;
+    color: black;
+    padding: 0.9em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
 }
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
@@ -116,7 +118,7 @@ Home page styling
 .banner-bg {
     height: 550px;
     background: url(../img/home-small.png) no-repeat bottom;
-    background-size:100%;
+    background-size: 100%;
 }
 
 blockquote {
@@ -156,7 +158,6 @@ menu styling
     text-align: center;
     color: #F58EB5;
 }
-
 /*mobile menu and info site banner pictures and contact pic*/
 .small-pic,
 .our-store,
@@ -269,7 +270,7 @@ textarea.box {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 620px) {
     h1 {
         font-size: 7vw;
     }
@@ -286,16 +287,18 @@ textarea.box {
         height: 350px;
         margin-top: 50px;
     }
-    footer p{
+
+    footer p {
         text-align: left;
     }
-    .socialicons{
-        width:150px;
+
+    .socialicons {
+        width: 150px;
         margin-right: 5%;
         margin-top: -80px;
         margin-bottom: 30px;
     }
-    
+
     /******************
     Home Pgae
     ****************/
@@ -308,32 +311,40 @@ textarea.box {
     header.banner-bg {
         max-height: max-content;
     }
-    .store-front{
+
+    .store-front {
         width: 40%;
         height: auto;
         margin-top: 100px;
         margin-right: 3vw;
     }
-    .home-map{
+
+    .home-map {
         width: 45vw;
         height: 30vw;
     }
-    .contents{
+
+    .contents {
         height: 70vw;
     }
+
     /*****************
     Menu
     *****************/
-    .small-pic {
-        display: none;
+    .menu-quote{
+        width: 80%;
+        margin: auto;
+        text-align: center;
     }
-
+   
     /*show the big banner for bigger device*/
     .big-pic {
         display: block;
         width: 100%;
     }
-
+    .small-pic {
+        display: none;
+    }
     /*change menu card width to add one more column for tablet*/
     .card {
         width: 30%;
@@ -353,36 +364,43 @@ textarea.box {
     #menu .quote {
         padding-top: 100px;
     }
-    .card2{
-        width:150px;
-        margin:auto;
+
+    .card2 {
+        width: 150px;
+        margin: auto;
     }
 
     /*change product flexbox to grid*/
-    .products{
+    .products {
         background-image: url(../img/produts-bg.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: bottom;
         display: grid;
         grid-template-areas: 'a a b b c c'
-                             'd d d e e e';
+            'd d d e e e';
     }
-    .item1{
-        grid-area:a;
+
+    .item1 {
+        grid-area: a;
     }
-    .item2{ 
-        grid-area:b;
+
+    .item2 {
+        grid-area: b;
     }
-    .item3{
-        grid-area:c;
+
+    .item3 {
+        grid-area: c;
     }
-    .item4{
-        grid-area:d;
+
+    .item4 {
+        grid-area: d;
     }
-    .item5{
-        grid-area:e;
+
+    .item5 {
+        grid-area: e;
     }
+
     /********************
     Info page
     ********************/
@@ -400,12 +418,13 @@ textarea.box {
         width: 100%;
         margin-top: 30px;
     }
-.part iframe {
-    width: 45%;
-    height: 300px;
-    padding: 10px;
-    float: left;
-}
+
+    .part iframe {
+        width: 45%;
+        height: 300px;
+        padding: 10px;
+        float: left;
+    }
 
     .address {
         margin-top: 100px;
@@ -428,36 +447,49 @@ textarea.box {
 }
 
 @media screen and (min-width: 1024px) {
-    .container{
+    .container {
         width: 85%;
     }
-    .socialicons{
+
+    .socialicons {
         width: 25%;
     }
+
     /**********************
     Home Page
     ********************/
-    .banner-bg{
-        height:800px;
+    .banner-bg {
+        height: 800px;
     }
-    .contents{
+
+    .contents {
         height: 60vw;
     }
-    .contents .bigger-font{
+
+    .contents .bigger-font {
         font-size: 3vw;
     }
+
     /*******************
     menu
     ******************/
 
     /*change menu list card size to add one more column to list*/
-    .card{
+    .card {
         width: 20%;
-        margin:15px;
+        margin: 15px;
     }
 
     /*responsive product list card size*/
-    .card2{
+    .card2 {
         width: 15vw;
+    }
+    /**********************
+    contact
+    **********************/
+
+    /*fix map position*/
+    .part iframe{
+        margin-left: 5%;
     }
 }
