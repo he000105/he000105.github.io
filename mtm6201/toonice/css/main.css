@@ -121,6 +121,7 @@ Home page styling
     height: 550px;
     background: url(../img/home-small.png) no-repeat bottom;
     background-size: 100%;
+    background-color: #F9D6DD;
 }
 
 blockquote {
