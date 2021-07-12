@@ -35,7 +35,7 @@
                 <li><a href="info.html" class="btn">Our Store</a></li>
                 <li><a href="info.html#contact" class="btn">Contact Us</a></li>
             </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
@@ -77,16 +77,15 @@
                     class="icons"></a>
         </div>
     </footer>
-    <!--javascript for burger menu - on click to activate dropdown menu-->
+    <!--javascript for burger menu - on click to activate dropdown menu and disable javascript for larger screen-->
     <script>
-        function myFunction() {
-            var x = document.getElementById("burger");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
+            function myFunction() {
+                var x = document.getElementById("burger");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }}
     </script>
 </body>
 

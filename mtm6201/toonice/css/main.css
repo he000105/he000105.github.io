@@ -5,7 +5,7 @@
 }
 
 .logo {
-    width: 45px;
+    width: 55px;
 }
 
 a {
@@ -54,6 +54,7 @@ footer p {
     margin-bottom: -10px;
     text-align: center;
 }
+
 .icons {
     width: 25px;
     height: 25px;
@@ -69,7 +70,7 @@ footer p {
     justify-content: space-between;
 }
 
-/*nav bar styling*/
+/***************************************nav bar styling*/
 .topnav a {
     font-family: 'Mukta', sans-serif;
     display: block;
@@ -79,6 +80,7 @@ footer p {
     text-align: center;
     text-decoration: none;
 }
+
 /*adding fade in animation for nav hover effect using background-size*/
 .btn {
     background-image: url(../img/hover.png);
@@ -89,7 +91,7 @@ footer p {
 }
 
 li a:hover {
-    background-size: 80px;
+    background-size: 55px;
     color: #DA627D;
 }
 
@@ -158,6 +160,7 @@ menu styling
     text-align: center;
     color: #F58EB5;
 }
+
 /*mobile menu and info site banner pictures and contact pic*/
 .small-pic,
 .our-store,
@@ -271,6 +274,34 @@ textarea.box {
 }
 
 @media screen and (min-width: 620px) {
+    /*change logo position to make nav bar wrap around logo*/
+    .logo{
+        position: absolute;
+        left: 50%;
+    }
+    /*show nav bar for tablet and  desktop*/
+    .topnav a:not(:last-child) {
+        display: block;
+    }
+
+    .topnav .btn {
+        float: left;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .topnav #burger {
+        display: block;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    .topnav {
+        width: 100%;
+    }
+
     h1 {
         font-size: 7vw;
     }
@@ -331,20 +362,22 @@ textarea.box {
     /*****************
     Menu
     *****************/
-    .menu-quote{
+    .menu-quote {
         width: 80%;
         margin: auto;
         text-align: center;
     }
-   
+
     /*show the big banner for bigger device*/
     .big-pic {
         display: block;
         width: 100%;
     }
+
     .small-pic {
         display: none;
     }
+
     /*change menu card width to add one more column for tablet*/
     .card {
         width: 30%;
@@ -366,7 +399,7 @@ textarea.box {
     }
 
     .card2 {
-        width: 150px;
+        width: 100px;
         margin: auto;
     }
 
@@ -476,20 +509,21 @@ textarea.box {
 
     /*change menu list card size to add one more column to list*/
     .card {
-        width: 20%;
-        margin: 15px;
+        width: 13%;
+        margin: 30px;
     }
 
     /*responsive product list card size*/
     .card2 {
         width: 15vw;
     }
+
     /**********************
     contact
     **********************/
 
     /*fix map position*/
-    .part iframe{
+    .part iframe {
         margin-left: 5%;
     }
 }
