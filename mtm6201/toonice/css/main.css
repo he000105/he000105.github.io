@@ -116,6 +116,47 @@ li a:hover {
 /*--------------------------------
 Home page styling
 ----------------------------------*/
+
+/*animation property*/
+@keyframes drop {
+
+    0%,
+    20%,
+    40% {
+        transform: rotate(-15deg)
+    }
+
+    10%,
+    30%,
+    50% {
+        transform: rotate(15deg)
+    }
+
+    60% {
+        transform: rotate(0deg);
+        margin-top: 200px
+    }
+
+    70%,
+    80% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(0deg) scale(2, 5);
+        margin-top: 0;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        margin-top: 0;
+    }
+}
+
+.drop .toon {
+    animation: drop 3s 1;
+}
+
 /*specify set home page banner height to limit changes of dropdown menu*/
 .banner-bg {
     height: 550px;
@@ -275,11 +316,13 @@ textarea.box {
 }
 
 @media screen and (min-width: 620px) {
+
     /*change logo position to make nav bar wrap around logo*/
-    .logo{
+    .logo {
         position: absolute;
         left: 50%;
     }
+
     /*show nav bar for tablet and  desktop*/
     .topnav a:not(:last-child) {
         display: block;
@@ -299,7 +342,7 @@ textarea.box {
         display: none;
     }
 
-    .topnav {
+    .topnav>.container {
         width: 100%;
     }
 
@@ -510,18 +553,29 @@ textarea.box {
 
     /*change menu list card size to add one more column to list*/
     .card {
-        width: 13%;
+        width: 15%;
         margin: 30px;
     }
 
     /*responsive product list card size*/
     .card2 {
-        width: 15vw;
+        width: 10vw;
     }
 
     /**********************
     contact
     **********************/
+    .label {
+        font-size: 2vw;
+    }
+
+    .box {
+        height: 3vw;
+    }
+
+    .contact {
+        margin-top: 3vw;
+    }
 
     /*fix map position*/
     .part iframe {
