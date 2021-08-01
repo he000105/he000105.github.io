@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,7 +16,7 @@
     <!--bootstrap nav-->
     <nav>
         <ul class="nav nav-pills nav-fill m-3">
-            <li><a href="#"><img src="./img/Asset 1.png" class="w-25 mx-4" alt="logo"></a></li>
+            <li><img src="./img/Asset 1.png" class="w-25 mx-4" alt="logo"></li>
             <li class="nav-item">
                 <a class="nav-link active bg-danger" aria-current="page" href="#">Home</a>
             </li>
@@ -25,7 +24,7 @@
                 <a class="nav-link text-danger" href="./index.html#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Contact</a>
+                <button type="button" class="btn text-danger" data-bs-toggle="modal" data-bs-target="#contact">Contact</button>
             </li>
         </ul>
     </nav>
@@ -41,7 +40,7 @@
 
             <div class="card col border-danger m-1">
                 <div class="card-body">
-                    <h3 class="card-title text-danger">Open Source</h5>
+                    <h3 class="card-title text-danger">Open Source</h3>
                         <p class="card-text">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
                             Quickly
                             prototype your ideas or build your entire app with our Sass variables and mixins, responsive
@@ -52,7 +51,7 @@
 
             <div class="card col border-warning m-1">
                 <div class="card-body">
-                    <h3 class="card-title text-warning">Mobile First</h5>
+                    <h3 class="card-title text-warning">Mobile First</h3>
                         <p class="card-text">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of
                             all
                             shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass
@@ -64,7 +63,7 @@
 
             <div class="card col border-info m-1">
                 <div class="card-body">
-                    <h3 class="card-title text-info">Components Library</h5>
+                    <h3 class="card-title text-info">Components Library</h3>
                         <p class="card-text">Bootstrap comes with an extensive components library that includes buttons
                             and
                             lists to carousels and modals. Components are easy to integrate into any site and require no
@@ -74,7 +73,7 @@
 
             <div class="card col border-success m-1">
                 <div class="card-body">
-                    <h3 class="card-title text-success">Grid System</h5>
+                    <h3 class="card-title text-success">Grid System</h3>
                         <p class="card-text">Mobile-first flexbox grid with twelve column system, six-default responsive
                             tiers. SASS variables and mixins and dozens of predefined class.</p>
                 </div>
@@ -88,12 +87,12 @@
             <p class="row row-cols-3 row-cols-md-4 row-cols-lg-6 justify-content-center">
                 <a class="m-3 btn btn-primary" data-bs-toggle="collapse" href="#alerts" role="button"
                     aria-expanded="false" aria-controls="multiCollapseExample1">Alerts</a>
+                <a class="m-3 btn btn-info" data-bs-toggle="collapse" href="#collapse" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Collapse</a>
                 <a class="m-3 btn btn-secondary" data-bs-toggle="collapse" href="#breadcrumbs" role="button"
                     aria-expanded="false" aria-controls="multiCollapseExample1">Breadcrumbs</a>
                 <a class="m-3 btn btn-warning" data-bs-toggle="collapse" href="#list-group" role="button"
                     aria-expanded="false" aria-controls="multiCollapseExample1">List group</a>
-                <a class="m-3 btn btn-info" data-bs-toggle="collapse" href="#collapse" role="button"
-                    aria-expanded="false" aria-controls="multiCollapseExample1">Collapse</a>
                 <a class="m-3 btn btn-danger" data-bs-toggle="collapse" href="#dropdowns" role="button"
                     aria-expanded="false" aria-controls="multiCollapseExample1">Dropdowns</a>
                 <a class="m-3 btn btn-success" data-bs-toggle="collapse" href="#navbars" role="button"
@@ -105,10 +104,16 @@
             </p>
             <div class="mb-5">
                 <div class="collapse multi-collapse" id="alerts">
-                    <div class="card card-body border-primary">
+                    <div class="alert alert-primary" role="alert">
                         Provide contextual feedback messages for typical user actions with the handful of
                         available and flexible alert messages.
                     </div>
+                </div>
+
+                <div class="collapse multi-collapse" id="collapse">
+                    <div class="card card-body border-info">
+                        The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used
+                        as triggers that are mapped to specific elements you toggle. </div>
                 </div>
 
                 <div class="collapse multi-collapse" id="breadcrumbs">
@@ -120,12 +125,6 @@
                 <div class="collapse multi-collapse" id="list-group">
                     <div class="card card-body border-warning">
                         List groups are a flexible and powerful component for displaying a series of content.</div>
-                </div>
-
-                <div class="collapse multi-collapse" id="collapse">
-                    <div class="card card-body border-info">
-                        The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used
-                        as triggers that are mapped to specific elements you toggle. </div>
                 </div>
 
                 <div class="collapse multi-collapse" id="dropdowns">
@@ -155,7 +154,41 @@
             </div>
         </div>
     </section>
-
+<!--contact me madal form-->
+    <section>
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Leave your message below</h5>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x btn-close" data-bs-dismiss="modal" aria-label="Close" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="col-form-label">Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Your Email</label>
+                        <input type="text" class="form-control" id="email">
+                      </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="m-3"><h6>Thank you for your feedback</h6></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
 
     <footer class="bg-dark text-white text-center p-3">
         <div>&copy;Copyright 2021</div>
@@ -165,5 +198,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    </p>
 </body>
