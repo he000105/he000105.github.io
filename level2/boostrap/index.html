@@ -19,60 +19,151 @@
         <ul class="nav nav-pills nav-fill m-3">
             <li><a href="#"><img src="./img/Asset 1.png" class="w-25 mx-4" alt="logo"></a></li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active bg-danger" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link text-danger" href="./index.html#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-danger" href="#">Contact</a>
             </li>
         </ul>
     </nav>
+    <div class="alert alert-danger" role="alert">
+        Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a
+        template starter page.
+    </div>
+    <!-- Referrance picture from https://unsplash.com/photos/bYiw48KLbmw -->
+    <img src="./img/pankaj-patel-bYiw48KLbmw-unsplash.jpg" class="container-fluid" alt="banner">
+    <section class="container" id="about">
+        <h1 class="mt-5">About Bootstrap</h1>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-center">
 
-    <div class="container px-4">
-        <h1>About Bootstrap</h1>
-
-        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="card col">
-                <div class="card-body p-3">
-                    <h5 class="card-title">Open Source</h5>
-                    <p class="card-text">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
-                        Quickly
-                        prototype your ideas or build your entire app with our Sass variables and mixins, responsive
-                        grid
-                        system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <div class="card col border-danger m-1">
+                <div class="card-body">
+                    <h3 class="card-title text-danger">Open Source</h5>
+                        <p class="card-text">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
+                            Quickly
+                            prototype your ideas or build your entire app with our Sass variables and mixins, responsive
+                            grid
+                            system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
                 </div>
             </div>
 
-            <div class="card col" >
-                <div class="card-body p-3">
-                    <h5 class="card-title">Mobile First</h5>
-                    <p class="card-text">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all
-                        shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables
-                        and
-                        mixins, and dozens of predefined classes.</p>
+            <div class="card col border-warning m-1">
+                <div class="card-body">
+                    <h3 class="card-title text-warning">Mobile First</h5>
+                        <p class="card-text">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of
+                            all
+                            shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass
+                            variables
+                            and
+                            mixins, and dozens of predefined classes.</p>
                 </div>
             </div>
 
-            <div class="card p-3 col" >
-                <div class="card-body p-3">
-                    <h5 class="card-title">Components Library</h5>
-                    <p class="card-text">Bootstrap comes with an extensive components library that includes buttons and
-                        lists to carousels and modals. Components are easy to integrate into any site and require no
-                        knowledge of JavaScript to use.</p>
+            <div class="card col border-info m-1">
+                <div class="card-body">
+                    <h3 class="card-title text-info">Components Library</h5>
+                        <p class="card-text">Bootstrap comes with an extensive components library that includes buttons
+                            and
+                            lists to carousels and modals. Components are easy to integrate into any site and require no
+                            knowledge of JavaScript to use.</p>
+                </div>
+            </div>
+
+            <div class="card col border-success m-1">
+                <div class="card-body">
+                    <h3 class="card-title text-success">Grid System</h5>
+                        <p class="card-text">Mobile-first flexbox grid with twelve column system, six-default responsive
+                            tiers. SASS variables and mixins and dozens of predefined class.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!--ID controled Collapse-->
+    <section class="container mt-5">
+        <h1>Components</h1>
+        <div>
+            <p class="row row-cols-3 row-cols-md-4 row-cols-lg-6 justify-content-center">
+                <a class="m-3 btn btn-primary" data-bs-toggle="collapse" href="#alerts" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Alerts</a>
+                <a class="m-3 btn btn-secondary" data-bs-toggle="collapse" href="#breadcrumbs" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Breadcrumbs</a>
+                <a class="m-3 btn btn-warning" data-bs-toggle="collapse" href="#list-group" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">List group</a>
+                <a class="m-3 btn btn-info" data-bs-toggle="collapse" href="#collapse" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Collapse</a>
+                <a class="m-3 btn btn-danger" data-bs-toggle="collapse" href="#dropdowns" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Dropdowns</a>
+                <a class="m-3 btn btn-success" data-bs-toggle="collapse" href="#navbars" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Navbars</a>
+                <a class="m-3 btn btn-light" data-bs-toggle="collapse" href="#carousel" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Carousel</a>
+                <a class="m-3 btn btn-dark" data-bs-toggle="collapse" href="#offcanvas" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Offcanvas</a>
+            </p>
+            <div class="mb-5">
+                <div class="collapse multi-collapse" id="alerts">
+                    <div class="card card-body border-primary">
+                        Provide contextual feedback messages for typical user actions with the handful of
+                        available and flexible alert messages.
+                    </div>
+                </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+                <div class="collapse multi-collapse" id="breadcrumbs">
+                    <div class="card card-body border-secondary">
+                        Indicate the current page’s location within a navigational hierarchy that automatically
+                        adds separators via CSS.</div>
+                </div>
+
+                <div class="collapse multi-collapse" id="list-group">
+                    <div class="card card-body border-warning">
+                        List groups are a flexible and powerful component for displaying a series of content.</div>
+                </div>
+
+                <div class="collapse multi-collapse" id="collapse">
+                    <div class="card card-body border-info">
+                        The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used
+                        as triggers that are mapped to specific elements you toggle. </div>
+                </div>
+
+                <div class="collapse multi-collapse" id="dropdowns">
+                    <div class="card card-body border-danger">
+                        Dropdowns are toggleable, contextual overlays for displaying lists of links and more.</div>
+                </div>
+
+                <div class="collapse multi-collapse" id="navbars">
+                    <div class="card card-body border-success">
+                        Provides responsive navigation header, the navbar. Includes support for branding, navigation,
+                        and more, for cycling through a series of content, built with CSS 3D transforms and JavaScript
+                    </div>
+                </div>
+
+                <div class="collapse multi-collapse" id="carousel">
+                    <div class="card card-body border-light">
+                        A slideshow component for cycling through elements—images or slides of text—like a carousel.
+                    </div>
+                </div>
+
+                <div class="collapse multi-collapse" id="offcanvas">
+                    <div class="card card-body border-dark">
+                        Build hidden sidebars for navigation, shopping carts, and more with a few classes and
+                        JavaScripts</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center p-3">
+        <div>&copy;Copyright 2021</div>
+        <div>Pictures from <a href="https://unsplash.com" class="text-white">Unsplash</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    </p>
 </body>
