@@ -1,0 +1,28 @@
+.logo{
+    height:35px;
+}
+.banner-small{
+    width:100%;
+}
+.banner-big{
+    display: none;
+}
+
+/**********************
+Tablet
+***********************/
+@media screen and (min-width: 600px){}
+
+
+/***********************
+Desktop
+************************/
+@media screen and (min-width: 990px) {
+    .banner-big{
+        width: 100%;
+        display: block;
+    }
+    .banner-small{
+        display: none;
+    }
+}
