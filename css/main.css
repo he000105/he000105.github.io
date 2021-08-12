@@ -1,28 +1,83 @@
-.logo{
-    height:35px;
+.logo {
+    height: 35px;
 }
-.banner-small{
-    width:100%;
+
+.banner-small {
+    width: 100%;
 }
-.banner-big{
+
+.banner-big {
     display: none;
+}
+
+button#example {
+    border: none;
+    outline: none;
+    color: grey;
+}
+a{text-decoration: none;}
+.offcanvas-body div a {
+
+    color: #DBD9DB;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.offcanvas {
+    background-color: #596F62;
+}
+
+.icons {
+    width: 40px;
+    height: 30px;
+    margin-left: 20px;
+    display:flex;
+}
+.card{
+    border:3px solid #596F62;
+    border-radius: 25px;
+}
+a{
+    color:#BD632F;
+    padding:5px;
+}
+a:hover{
+    color: #EDE7D9;
+    border-radius: 25px;
+}
+.icons a:hover{
+    background: none;
+}
+footer{
+    background-color: #596F62;
+}
+footer a, footer p{
+    color:white;
 }
 
 /**********************
 Tablet
 ***********************/
-@media screen and (min-width: 600px){}
+@media screen and (min-width: 576px) {
 
+}
 
 /***********************
 Desktop
 ************************/
-@media screen and (min-width: 990px) {
-    .banner-big{
+@media screen and (min-width: 992px) {
+    .banner-big {
         width: 100%;
         display: block;
     }
-    .banner-small{
+
+    .banner-small {
         display: none;
     }
 }
