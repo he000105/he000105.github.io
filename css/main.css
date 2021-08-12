@@ -66,29 +66,40 @@ footer a,
 footer p {
     color: white;
 }
-.tag{
+
+.tag {
     height: 400px;
-    width:100%;
-    color:#EDE7D9;
-    font-size:  15vw;
+    width: 100%;
+    color: #EDE7D9;
+    font-size: 15vw;
     padding-top: 150px;
 }
+
 /***********web page style*****/
-.web-card{
-    width:90%;
+.web-card {
+    width: 90%;
     margin: auto;
     margin-bottom: 60px;
 }
-.web-example{
-    width:100%;
+
+.web-example {
+    width: 100%;
 }
-.web{
+
+.web {
     background-image: url(../img/web-bg.png);
-    background-size:cover;
+    background-size: cover;
 }
-.ux{
+
+.ux {
     background-image: url(../img/ux-bg.png);
-    background-size:cover;
+    background-size: cover;
+}
+
+/**********contact page***************/
+.contact{
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
 }
 /**********************
 Tablet
@@ -98,17 +109,19 @@ Tablet
     /***********************
 web design page styling
 ***********************/
-.web-example{
-    width:350px;
-    height: 510px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-/*****flex box styling for images and text box**/
+    .web-example {
+        width: 350px;
+        height: 510px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /*****flex box styling for images and text box**/
     .img-left {
         display: flex;
     }
-    .img-right{
+
+    .img-right {
         display: flex;
         flex-direction: row-reverse;
     }
@@ -126,12 +139,14 @@ Desktop
     .banner-small {
         display: none;
     }
-    .web-example{
-        width:600px;
+
+    .web-example {
+        width: 600px;
         height: 920px;
         margin-right: 20px;
     }
-    .tag{
+
+    .tag {
         font-size: 10vw;
     }
 }
