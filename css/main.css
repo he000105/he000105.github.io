@@ -15,7 +15,11 @@ button#example {
     outline: none;
     color: grey;
 }
-a{text-decoration: none;}
+
+a {
+    text-decoration: none;
+}
+
 .offcanvas-body div a {
 
     color: #DBD9DB;
@@ -37,35 +41,77 @@ h3 {
     width: 40px;
     height: 30px;
     margin-left: 20px;
-    display:flex;
-}
-.card{
-    border:3px solid #596F62;
-    border-radius: 25px;
-}
-a{
-    color:#BD632F;
-    padding:5px;
-}
-a:hover{
-    color: #EDE7D9;
-    border-radius: 25px;
-}
-.icons a:hover{
-    background: none;
-}
-footer{
-    background-color: #596F62;
-}
-footer a, footer p{
-    color:white;
+    display: flex;
 }
 
+.card {
+    border: 3px solid #596F62;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+a {
+    color: #BD632F;
+}
+
+a:hover {
+    color: #EDE7D9;
+}
+
+footer {
+    background-color: #596F62;
+}
+
+footer a,
+footer p {
+    color: white;
+}
+.tag{
+    height: 400px;
+    width:100%;
+    color:#EDE7D9;
+    font-size:  15vw;
+    padding-top: 150px;
+}
+/***********web page style*****/
+.web-card{
+    width:90%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.web-example{
+    width:100%;
+}
+.web{
+    background-image: url(../img/web-bg.png);
+    background-size:cover;
+}
+.ux{
+    background-image: url(../img/ux-bg.png);
+    background-size:cover;
+}
 /**********************
 Tablet
 ***********************/
 @media screen and (min-width: 576px) {
 
+    /***********************
+web design page styling
+***********************/
+.web-example{
+    width:350px;
+    height: 510px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*****flex box styling for images and text box**/
+    .img-left {
+        display: flex;
+    }
+    .img-right{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 /***********************
@@ -79,5 +125,13 @@ Desktop
 
     .banner-small {
         display: none;
+    }
+    .web-example{
+        width:600px;
+        height: 920px;
+        margin-right: 20px;
+    }
+    .tag{
+        font-size: 10vw;
     }
 }
