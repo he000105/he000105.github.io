@@ -12,3 +12,5 @@ home page banner - https://unsplash.com/photos/TamMbr4okv4
 web banner - https://unsplash.com/photos/DuHKoV44prg
 ux banner - https://unsplash.com/photos/gcHFXsdcmJE
 contact banner - https://unsplash.com/photos/lpWb5mCXqP8
+
+Mockup link - 
