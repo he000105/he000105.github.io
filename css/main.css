@@ -23,6 +23,24 @@ a {
     color: #DBD9DB;
 }
 
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h2,
+h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+}
+
 h1,
 h2,
 h3 {
@@ -34,12 +52,14 @@ h3 {
 .offcanvas {
     background-color: #596F62;
 }
-.icons{
+
+.icons {
     width: 40px;
-    height:30px;
+    height: 30px;
     margin: 20px;
     display: flex;
 }
+
 /*********flex box footer social media icons*************/
 .social {
     display: flex;
@@ -50,7 +70,7 @@ h3 {
     border: 1px solid #596F62;
     border-radius: 25px;
     margin: 10px;
-    background-color:#ede7d952;
+    background-color: #ede7d952;
 }
 
 a {
@@ -98,20 +118,76 @@ footer p {
     background-image: url(../img/ux-bg.png);
     background-size: cover;
 }
-
+/**********Photograph**********/
+.photos{
+    width:100%;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.pho-head{
+    width:100%;
+}
+.pho-text{
+    width:100%;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.178);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pho-list{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.pho-items{
+    width: 100%;
+    margin-bottom: 20px;
+}
 /**********contact page***************/
 .contact {
     background-image: url(../img/contact-bg.png);
     background-size: cover;
 }
 
+input,
+textarea,
+.submit {
+    border: solid 1.5px #596F62;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 40px;
+    margin-top: 5px;
+}
+
+#check {
+    height: 15px;
+}
+
+textarea {
+    height: 150px;
+    margin-top: 5px;
+}
+
+.submit {
+    background-color: #596F62;
+    color: white;
+    padding: 5px;
+}
+
 /**********************
 Tablet
 ***********************/
 @media screen and (min-width: 576px) {
-.social a img{
-    margin-left: 40px;
-}
+    .social a img {
+        margin-left: 40px;
+    }
+
     /***********************
 web design page styling
 ***********************/
@@ -130,6 +206,17 @@ web design page styling
     .img-right {
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    /**********responsive flexbox photograph page************/
+    .pho-items{
+        width: 45%;
+        height:fit-content;
+    }
+    .pho-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 
@@ -155,4 +242,11 @@ Desktop
     .tag {
         font-size: 10vw;
     }
+
+        /**********responsive flexbox photograph page************/
+        .pho-items{
+            width: 30%;
+            height:fit-content;
+        }
+
 }

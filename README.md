@@ -2,7 +2,8 @@
 
 This is a github site built for school.
 
-Building this portfolio. Used bootstrap. The chanllenge was specify elements changing the 
+Building this portfolio. Used bootstrap. 
+The chanllenge was specify elements changing the 
 
 
 Referrance
