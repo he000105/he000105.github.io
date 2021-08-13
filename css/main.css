@@ -10,6 +10,11 @@
     display: none;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -59,9 +64,11 @@ h3 {
     margin: 20px;
     display: flex;
 }
-nav div a:hover{
+
+nav div a:hover {
     background: none;
 }
+
 /*********flex box footer social media icons*************/
 .social {
     display: flex;
@@ -92,9 +99,12 @@ footer a,
 footer p {
     color: white;
 }
-.footer-nav a:hover, .social a:hover {
-    background:none;
+
+.footer-nav a:hover,
+.social a:hover {
+    background: none;
 }
+
 .tag {
     height: 400px;
     width: 100%;
@@ -123,18 +133,21 @@ footer p {
     background-image: url(../img/ux-bg.png);
     background-size: cover;
 }
+
 /**********Photograph**********/
-.photos{
-    width:100%;
+.photos {
+    width: 100%;
     color: white;
     position: relative;
     text-align: center;
 }
-.pho-head{
-    width:100%;
+
+.pho-head {
+    width: 100%;
 }
-.pho-text{
-    width:100%;
+
+.pho-text {
+    width: 100%;
     position: absolute;
     bottom: 20px;
     background-color: rgba(0, 0, 0, 0.178);
@@ -142,15 +155,18 @@ footer p {
     padding-left: 20px;
     padding-right: 20px;
 }
-.pho-list{
+
+.pho-list {
     width: 80%;
     margin: auto;
     margin-top: 30px;
 }
-.pho-items{
+
+.pho-items {
     width: 100%;
     margin-bottom: 20px;
 }
+
 /**********contact page***************/
 .contact {
     background-image: url(../img/contact-bg.png);
@@ -196,6 +212,7 @@ Tablet
     /***********************
 web design page styling
 ***********************/
+
     .web-example {
         width: 350px;
         height: 510px;
@@ -215,27 +232,31 @@ web design page styling
 
     /**********responsive flexbox photograph page************/
     /********changed banner text overlay on image to flex**********/
-    .photos{
+    .photos {
         display: flex;
         flex-direction: row-reverse;
         width: 80%;
         margin: auto;
     }
 
-    .pho-head, .pho-text{
+    .pho-head,
+    .pho-text {
         width: 50%;
     }
-    .pho-text{
-       position:unset;
-       color: black;
-       margin: auto;
-       background: none;
+
+    .pho-text {
+        position: unset;
+        color: black;
+        margin: auto;
+        background: none;
     }
-    .pho-items{
+
+    .pho-items {
         width: 45%;
-        height:fit-content;
+        height: fit-content;
     }
-    .pho-list{
+
+    .pho-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -265,9 +286,9 @@ Desktop
         font-size: 10vw;
     }
 
-        /**********responsive flexbox photograph lists************/
-        .pho-items{
-            width: 30%;
-        }
+    /**********responsive flexbox photograph lists************/
+    .pho-items {
+        width: 30%;
+    }
 
 }
