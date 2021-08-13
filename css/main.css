@@ -59,7 +59,9 @@ h3 {
     margin: 20px;
     display: flex;
 }
-
+nav div a:hover{
+    background: none;
+}
 /*********flex box footer social media icons*************/
 .social {
     display: flex;
@@ -67,18 +69,19 @@ h3 {
 }
 
 .card {
-    border: 1px solid #596F62;
-    border-radius: 25px;
+    border: 0px;
     margin: 10px;
-    background-color: #ede7d952;
 }
 
 a {
     color: #BD632F;
+    padding: 5px;
 }
 
 a:hover {
-    color: #EDE7D9;
+    color: white;
+    background-color: #BD632F;
+    border-radius: 5px;
 }
 
 footer {
@@ -89,7 +92,9 @@ footer a,
 footer p {
     color: white;
 }
-
+.footer-nav a:hover, .social a:hover {
+    background:none;
+}
 .tag {
     height: 400px;
     width: 100%;
@@ -209,6 +214,23 @@ web design page styling
     }
 
     /**********responsive flexbox photograph page************/
+    /********changed banner text overlay on image to flex**********/
+    .photos{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: auto;
+    }
+
+    .pho-head, .pho-text{
+        width: 50%;
+    }
+    .pho-text{
+       position:unset;
+       color: black;
+       margin: auto;
+       background: none;
+    }
     .pho-items{
         width: 45%;
         height:fit-content;
@@ -243,10 +265,9 @@ Desktop
         font-size: 10vw;
     }
 
-        /**********responsive flexbox photograph page************/
+        /**********responsive flexbox photograph lists************/
         .pho-items{
             width: 30%;
-            height:fit-content;
         }
 
 }
