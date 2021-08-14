@@ -10,7 +10,7 @@
     display: none;
 }
 
-button#example {
+button.nav-link#example {
     border: none;
     background: none;
 }
