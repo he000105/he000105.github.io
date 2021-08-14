@@ -10,7 +10,7 @@
     display: none;
 }
 
-button {
+button#example {
     border: none;
     background: none;
 }
