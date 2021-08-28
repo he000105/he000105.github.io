@@ -69,6 +69,11 @@ nav div a:hover {
     background: none;
 }
 
+.youtube {
+    width: 100%;
+    height: 400px;
+}
+
 /*********flex box footer social media icons*************/
 .social {
     display: flex;
@@ -267,6 +272,10 @@ web design page styling
 Desktop
 ************************/
 @media screen and (min-width: 992px) {
+    .youtube {
+        height: 600px;
+    }
+
     .banner-big {
         width: 100%;
         display: block;
