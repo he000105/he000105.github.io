@@ -24,8 +24,16 @@ a {
 }
 
 .offcanvas-body div a {
-
     color: #DBD9DB;
+}
+
+.dropdown-item{
+   color: #13315C;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color:#EEF4ED ;
 }
 
 p {
@@ -55,7 +63,7 @@ h3 {
 }
 
 .offcanvas {
-    background-color: #596F62;
+    background-color: #FFA987;
 }
 
 .icons {
@@ -97,7 +105,7 @@ a:hover {
 }
 
 footer {
-    background-color: #596F62;
+    background-color: #E54B4B;
 }
 
 footer a,
@@ -181,7 +189,7 @@ footer p {
 input,
 textarea,
 .submit {
-    border: solid 1.5px #596F62;
+    border: solid 1.5px #E54B4B;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -201,7 +209,7 @@ textarea {
 }
 
 .submit {
-    background-color: #596F62;
+    background-color: #E54B4B;
     color: white;
     padding: 5px;
 }
