@@ -11,9 +11,6 @@ Banner
     padding-top: 100px;
     background-image: url(../img/home-banner-sm.png);
 }
-.banner-head{
-    text-align: left;
-}
 /**.banner-small {
     width: 100%;
 }
@@ -231,6 +228,10 @@ textarea {
 Tablet
 ***********************/
 @media screen and (min-width: 576px) {
+    .banner-head{
+        text-align: left;
+    }
+    
     .social a img {
         margin-left: 40px;
     }

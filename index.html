@@ -5,10 +5,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!--reset css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!--google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +28,19 @@
 </head>
 
 <body>
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between">
+        <a class="navbar-brand ms-3 col" href="./index.html">
+          <img src="./img/name.png" alt="logo"
+            class="d-inline-block align-text-top logo"></a>
+        <div class="col"><a href="#">About Me</a></div>
+        <div class="col"><a href="#">Work Examples</a></div>
+        <div class="col"><a href="#">Contact Me</a></div>
+      </div>
+    </div>
+  </nav>
+  <!--
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" href="./index.html"><img src="./img/name.png" alt="logo"
@@ -41,7 +56,9 @@
           <li class="nav-item ms-5">
             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
           </li>
-          <!--Offcanvas nav list-->
+
+          Offcanvas nav list
+
           <li class="nav-item ms-5">
             <button class="nav-link" id="example" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Work Example</button>
@@ -76,11 +93,11 @@
       </div>
     </div>
   </nav>
-
+-->
   <main class="home-banner">
-      <h1 class="banner-head">Welcome to Haiyan's Portfolio</h1>
-      <p>Professional, Passional, Creative</p>
-      
+    <h1 class="text-sm-center text-md-start">Welcome to Angel's Portfolio</h1>
+    <span>Understand needs of creating user-centric, interactive products</span>
+
     <!--
     <img src="./img/home-banner-sm.png" alt="home-banner" class="banner-small">
     <img src="./img/home-banner.png" alt="home-banner-desktop" class="banner-big">
